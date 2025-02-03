@@ -1,6 +1,5 @@
 from pydantic import BaseModel, Field
 
-
 class CreateUserRequest(BaseModel):
     username: str
     email: str
@@ -9,4 +8,4 @@ class CreateUserRequest(BaseModel):
     password: str 
     is_active: bool = Field(default=False)
     role: str = Field(default="user")
-    phone_number: int
+    phone_number: str  
