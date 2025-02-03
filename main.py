@@ -1,6 +1,6 @@
-from .db.database import SessionLocal, engine
-from .db.models import Base
-from .routers import auth, food
+from db.database import SessionLocal, engine
+from db.models import Base
+from routers import auth, food
 
 from fastapi import FastAPI, Depends
 from typing import Annotated

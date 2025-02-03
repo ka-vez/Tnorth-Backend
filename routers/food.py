@@ -1,5 +1,5 @@
-from ..db.database import SessionLocal 
-from .auth  import get_current_user
+from db.database import SessionLocal 
+from .auth import get_current_user
 
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session

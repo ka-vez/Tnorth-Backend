@@ -1,6 +1,6 @@
-from ..db.database import SessionLocal 
-from ..db.models import Users
-from ..schemas import CreateUserRequest
+from db.database import SessionLocal 
+from db.models import Users
+from schemas import CreateUserRequest
 
 from fastapi import APIRouter, Depends, status, HTTPException
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
